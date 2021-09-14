@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100vh;
+}
+
+ul > li {
+    list-style: none;
+    height: 80vh;
+    position: relative;
+    border-radius: 2rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+.img-card {
+    flex: 0.5;
+}
+
+.show-img {
+    flex: 5;
+}
+
+.flex-container {
+    display: flex;
+    width: 80vw;
+}
+
+@media (max-width: 480px) {
+    .flex-container {
+        width: 100vw;
+    }
+
+    ul:nth-child(4),
+    ul:nth-child(5) {
+        display: none;
+    }
+}
